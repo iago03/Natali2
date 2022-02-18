@@ -1,0 +1,72 @@
+main{
+    padding-bottom: 190px;
+    
+}
+
+main section{
+    width: 70%;
+    margin: 0px auto;
+    padding-top: 210px;
+    position: relative;
+}
+
+main section .img div{
+    position: absolute;
+    width: 400px;
+    z-index: -1;
+}
+
+main section .img div:first-child{
+    top: 40px;
+    left: -145px;
+}
+
+main section .img div:last-child{
+    bottom: -170px;
+    right: -145px;
+    transform: rotate(180deg);
+}
+
+main section .content{
+    background-color: white;
+    padding: 20px;
+}
+main section .content h4{
+    margin-top: 30px;
+}
+
+main section .content ol li{
+    margin-bottom: 20px;
+}
+
+main section .content ol li span{
+    font-weight: bold;
+}
+
+/* respons */
+
+@media screen and (max-width:1250){
+    main section .img div:first-child{
+        left: -50;
+    }
+
+    main section .img div:last-child{
+        right: -34px;
+    }
+}
+
+@media screen and (max-width:1250px){
+    main section .img div:first-child{
+        left: 0px;
+    }
+
+    main section .img div:last-child{
+        right: 0px;
+    }
+}
+
+@media screen and (max-width:500px){
+    main section .img div{
+        width: 300px;
+    }
+}

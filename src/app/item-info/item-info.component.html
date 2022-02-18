@@ -1,0 +1,45 @@
+<main>
+    <section>
+        <article class="button-area">
+            <a 
+            *ngIf="showPrevious"
+            (click)="Previous()"><i class="fas fa-chevron-left"></i> უკან</a>
+            <a 
+            *ngIf="showNext"
+            (click)="next()">წინ <i class="fas fa-chevron-right"></i></a>
+        </article>
+        <article class="content">
+            <aside class="left">
+                <div class="img">
+                    <img [src]="itemInfo.ImgUrl" alt="">
+                </div>
+                <p>იგზვნება საქართველოს მასშტაბით, ასევე საზღვარგარეთ!
+                    საკურიერიერო სერვისი - 5ლ.</p>
+            </aside>
+            <aside class="right">
+                <h4>{{itemInfo.Name}}</h4>
+                <h3>{{itemInfo.Price}}</h3>
+
+                <div class="drop-down-info first">
+                    <h5 (click)="dropDownFirst()">საცხის შესახებ:
+                        <span [ngClass]="{'plus':!firstDropDown}"></span>
+                        <span></span>
+                    </h5>
+                    <p *ngIf="firstDropDown">{{itemInfo.Description}}</p>
+                </div>
+
+                <div class="drop-down-info">
+                    <h5
+                    (click) = "dropDownSecond()"
+                    >გამოყენების წესი:
+                        <span [ngClass]="{'plus':!secondDropDown}"></span>
+                        <span></span>
+                    </h5>
+                    <p
+                    *ngIf="secondDropDown"
+                    >{{itemInfo.Used}}</p>
+                </div>
+            </aside>
+        </article>
+    </section>
+</main>

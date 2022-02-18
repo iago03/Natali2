@@ -1,0 +1,67 @@
+<main>
+    <section>
+        <article class="text">
+            <h4>- კონტაქტი -</h4>
+            <p>იგზვნება საქართველოს მასშტაბით, ასევე საზღვარგარეთ! საკურიერიერო სერვისი - 5ლ.</p>
+            <p>E: info@mysite.ru  T: +7 (495) 000-00-00</p>
+        </article>
+        <article class="icon">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-vk"></i></a>
+                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+        </article>
+        <article class="inputs-area">
+
+            <form #frm="ngForm">
+
+                <div class="input">
+                    <input
+                    required
+                    [(ngModel)]="formItem.Name"
+                    #nameUser="ngModel"
+                    [ngClass]="{'danger':nameUser.touched && nameUser.invalid}"
+                    type="name" name="FirstName" placeholder="სახელი">
+                </div>
+                <div class="input">
+                    <input
+                    required
+                    [(ngModel)]="formItem.Email"
+                    #mailUser="ngModel"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
+                    [ngClass]="{'danger':mailUser.touched && mailUser.invalid}"
+                    type="email" name="Email" placeholder="ელ. ფოსტა">
+                </div>
+                <div class="input">
+                    <input
+                    pattern="[0-9]{9}"
+                    required
+                    [(ngModel)]="formItem.Phone"
+                    #phone="ngModel"
+                    [ngClass]="{'danger':phone.touched && phone.invalid}"
+                    type="tel" name="Phone" placeholder="ტელეფონი">
+                </div>
+                <div class="input">
+                    <textarea
+                    required
+                    [(ngModel)]="formItem.Text"
+                    #textUser="ngModel"
+                    [ngClass]="{'danger':textUser.touched && textUser.invalid}"
+                    name="Text" placeholder="მოგვწერეთ..."></textarea>
+                </div>
+    
+                <div class="input button">
+                    <button
+                    (click)="onClick(frm);" 
+                    name="button" [disabled]="frm.invalid"
+                    >გაგზავნა</button>
+                </div>
+
+            </form>
+
+        </article>
+        <article class="img">
+            <img src="../../assets/img/contact/contact-img2.webp" alt="">
+        </article>
+    </section>
+</main>

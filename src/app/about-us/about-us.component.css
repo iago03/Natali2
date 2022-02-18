@@ -1,0 +1,85 @@
+main{
+    background-image: url(../../assets/img/aboutUs/aboutUs1.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: rgb(112, 108, 108);
+}
+
+main section{
+    padding: 320px 0px 0px;
+    width: 75%;
+    margin: 0px auto;
+}
+
+main section .top {
+    text-align: center;
+}
+
+main section .top .top-img{
+    width: 60%;
+    margin: auto;
+}
+
+main section .bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+main section .bottom aside{
+    width: 47%;
+}
+
+main section .bottom aside h3{
+    font-size: 31px;
+    font-family: 'Marck Script', cursive;
+    margin-bottom: 40px;
+}
+
+main section .bottom aside p{
+    margin-bottom: 30px;
+}
+
+main section .bottom .right .bottom-img{
+    width: 270px;
+    height: 195px;
+    margin: 0px auto;
+}   
+
+
+/* respons */
+
+@media screen and (max-width:900px){
+    main section{
+        width: 90%;
+    }
+
+    main section .bottom{
+        flex-direction: column;
+    }
+
+    main section .bottom aside{
+        width: 100%;
+    }
+
+    main section .bottom .left{
+        margin: 50px 0px;
+    }
+
+    main section .bottom aside h3{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:600px){
+    main section{
+        padding-top: 100px;
+    }
+
+    main section .top .top-img{
+        width: 100%;
+    }
+
+    main section .bottom aside h3{
+        font-size: 25px;
+    }
+}

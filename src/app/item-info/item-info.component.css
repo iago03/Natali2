@@ -1,0 +1,97 @@
+main section{
+    width: 75%;
+    margin: 0px auto;
+}
+
+main section{
+    padding-top: 150px;
+}
+
+main a{
+    text-decoration: none;
+    color: black;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+main section p{
+    margin: 0px;
+    color: rgb(81, 64, 65);
+}
+
+main section .content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
+main section .content .left{
+    width: 50%;
+}
+
+main section .content .left .img{
+    margin-bottom: 30px;
+}
+
+main section .content .right{
+    width: 45%;
+}
+
+
+main section .content .right h4{
+    text-align: start;
+}
+
+main section .content .right h3{
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+main section .content .right .drop-down-info{
+    padding-top: 20px;
+}
+
+main section .content .right .first{
+    padding: 0px 0px 20px;
+    border-bottom: 1px solid rgb(81, 64, 65);
+}
+
+main section .content .right h5{
+    position: relative;
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: rgb(81, 64, 65);
+    cursor: pointer;
+}
+
+main section .content .right span{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+}
+
+main section .content .right .plus{
+    transform: rotate(90deg);
+}
+
+
+/* respons */
+@media screen and (max-width:800px){
+    main section .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main section aside {
+        width: 100%!important;
+    }
+
+    main section .content aside:first-child{
+        margin-bottom: 30px;
+    }
+}

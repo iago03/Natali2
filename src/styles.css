@@ -1,1 +1,78 @@
 /* You can add global styles to this file, and also import other style files */
+h4{
+    font-size: 20px!important;
+    color: rgb(112, 108, 108);
+    margin-bottom: 30px!important;
+    text-align: center;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+main{
+    padding-bottom: 150px;
+}
+
+main .loading{
+    width: 100px;
+    height: 100px;
+    margin: 0px auto;
+}
+
+/* page 1 and page 2 */
+main .page{
+    padding-top: 150px;
+    width: 75%;
+    margin: 0px auto;
+}
+
+main .page .img-area .img{
+    width: 540px;
+    height: 170px;
+    margin: 0px auto 50px;
+}
+
+main section .cards-area{
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* page 1 and page 2 */
+
+@media screen and (max-width:1250px){
+    main section{
+        width: 90%!important;
+    }
+}
+
+@media screen and (max-width:800px){
+    .body-scroll{
+        overflow: hidden;
+    }
+}
+
+/* page1 and page2 respons, h4 and p*/
+@media screen and (max-width:600px){
+    main h4{
+        font-size: 17px!important;
+    }
+
+    main p{
+        font-size: 15px;
+    }
+
+    main .page .img-area .img{
+        width: 100%;
+        height: 100%;
+    }
+
+    main section .cards-area{
+        justify-content: center;
+    }
+}

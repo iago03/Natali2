@@ -1,0 +1,119 @@
+main{
+    background-image: url(../../assets/img/contact/contact-img1.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+main section{
+    padding-top: 380px;
+    width: 50%;
+    margin: 0px auto;
+}
+
+main section .text p{
+    font-size: 14px;
+    color: rgb(112, 108, 108);
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+main section .icon{
+    text-align: center;
+    margin: 40px 0px;
+}
+
+main section .icon i{
+    font-size: 20px;
+    margin-left: 20px;
+    color: black;
+}
+
+main section .inputs-area .input{
+    width: 60%;
+    margin: 0px auto;
+}
+
+main section .inputs-area .input input,main section .inputs-area .input textarea{
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 0px 10px 20px;
+    border-radius: 0px;
+    border: 1px solid ;
+    font-size: 14px;
+}
+
+main section .inputs-area .input textarea{
+    height: 110px;
+    resize: none;
+    margin: 0px;
+}
+
+main section .inputs-area .input input:focus-visible,main section .inputs-area .input textarea:focus-visible{
+    outline: none;
+    border: 3px solid black;
+    padding: 8px 0px 8px 18px;
+}
+
+main section .inputs-area .input input:hover,main section .inputs-area .input textarea:hover{
+    border: 3px solid black;
+    padding: 8px 0px 8px 18px;
+}
+
+main section .inputs-area .button{
+    text-align: end;
+    margin: 20px auto 30px;
+}
+
+main section .inputs-area .button button{
+    border: none;
+    width: 160px;
+    height: 35px;
+    background-color: rgb(246, 220, 208);
+    transition: all 0.3s;
+}
+
+main section .inputs-area .button button:hover{
+  background-color: rgb(223, 202, 207);
+}
+
+
+main section .inputs-area .button button:active{
+    transform: translateY(4px);
+}
+
+main section .img{
+    width: 125px;
+    height: 160px;
+    margin: 0px auto;
+}
+
+.danger{
+    border-color: red!important;
+}
+
+main section .inputs-area .input .danger:focus-visible{
+    border: 3px solid red;
+}
+
+main section .inputs-area .input .danger:hover{
+    border: 3px solid red;
+}
+
+/* respons */
+@media screen and (max-width:900px){
+    main section .inputs-area .input{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px){
+    main section{
+        padding-top: 200px;
+    }
+
+    main section .inputs-area .button button{
+        width: 120px;
+    }
+}
+
+

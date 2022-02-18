@@ -1,0 +1,25 @@
+<main>
+    <section class="page">
+        <article class="img-area">
+            <h4> დღის და ღამის მოვლა სხვადასხვა მიდგომას საჭიროებს, დღის და ღამის პერიოდებში ჩვენს კანს განსხვავებული
+                მოთხოვნილებები აქვს.</h4>
+            <div class="img">
+                <img src="../../../assets/img/page1/img1.webp" alt="">
+            </div>
+            <h4>დღის კრემი აუცილებლად უნდა უზრუნველყოფდეს კანის დაცვას მზისა და გარემოს მავნე
+                ზემოქმედებისგან, ასევე უნდა წარმოადგენდეს ბაზას დეკორატიული კოსმეტიკისათვის, ამასთან უდა გააჩნდეს
+                მსუბუქი ტექსტურა.</h4>
+        </article>
+        <article class="cards-area">
+            <app-card
+             *ngFor="let item of cardsItem" [cardItem]="item"
+             (click)="getToItemInfo(item.createdAt)" 
+             ></app-card>
+        </article>
+        <div 
+        *ngIf="loading"
+        class="loading">
+            <img src="../../assets/img/loading/Spinner-1s-200px.svg" alt="">
+        </div>
+    </section>
+</main>

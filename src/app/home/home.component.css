@@ -1,0 +1,155 @@
+main{
+    background-image: url(../../assets/img/home/home-img.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+main section{
+    padding-top: 150px;
+    width: 75%;
+    margin: 0px auto;
+}
+
+main section .home-text{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background-color: rgb(246, 220, 208);
+    margin: 0px auto 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section .home-text h2{
+    font-size: 39px;
+    font-family: 'Marck Script', cursive;
+    margin-bottom: 30px;
+}
+
+main section .home-text h3{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 0px;
+}
+
+main section .home-img{
+    display: flex;
+    justify-content: space-between;
+}
+
+main section .home-img .right .border,
+main section .home-img .right .border_second,
+main section .home-img .left .bottom{
+    border: 1px solid black!important;
+    padding: 20px;
+    text-align: center;
+}
+
+main section .home-img aside a{
+    text-decoration: none;
+    color: rgb(159 154 154);
+    transition: all 0.4s;
+}
+
+main section .home-img aside a:hover{
+    color: rgb(98, 71, 71)!important;
+}
+
+main section .home-img .left{
+    width: 40%
+}
+
+main section .home-img .left .top{
+    background-color: rgb(116, 128, 106);
+    padding: 20px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+main section .home-img .left .top .care{
+    border: 2px solid white;
+    padding: 80px 20px;
+}
+
+main section .home-img .left .top .care h5{
+    font-size: 32px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+main section .home-img .left .top .care a{
+    color: white;
+}
+
+main section .home-img .img{
+    max-width: 320px;
+    max-height: 380px;
+    margin: 0px auto 10px;
+}
+
+main section .home-img .left p{
+    font-family: 'Marck Script', cursive;
+    font-size: 31px;
+    color: rgb(112, 108, 108);
+}
+
+main section .home-img .right{
+    width: 50%;
+    padding-top: 70px;
+}
+
+main section .home-img .right .border h5{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+main section .home-img .right .border p{
+    font-size: 15px;
+    margin-bottom: 40px;
+    color: rgb(112, 108, 108);
+}
+
+/* respons */
+
+@media screen and (max-width:1100px){
+    main section .home-img{
+        flex-direction: column;
+    }
+
+    main section .home-img aside{
+        width: 50%!important;
+        margin: 100px auto 0px;
+        padding: 0px!important;
+    }
+
+
+}
+
+@media screen and (max-width:900px){
+    main section .home-img aside{
+        width: 70%!important;
+    }
+
+}
+
+@media screen and (max-width:700px){
+    main section .home-text{
+        width: 250px;
+        height: 250px;
+    }
+
+    main section .home-text h2{
+        font-size: 25px;
+    }
+    
+    main section .home-text h3{
+        font-size: 20px;
+    }
+
+    main section .home-img aside{
+        width: 100%!important;
+    }
+
+}
