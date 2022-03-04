@@ -35,11 +35,11 @@ export class Page2Component implements OnInit {
   
       // }
 
-      this.cardsItemNam = this.cardsItem[this.cardsItem.length - 1].createdAt;
+      // this.cardsItemNam = this.cardsItem[this.cardsItem.length - 1].createdAt;
 
-      this.http.scrollgetItemsFromFirebase(this.cardsItemNam).subscribe((v:any) => {
-        this.cardsItem = this.cardsItem.concat(v);
-      })
+      // this.http.scrollgetItemsFromFirebase(this.cardsItemNam).subscribe((v:any) => {
+      //   this.cardsItem = this.cardsItem.concat(v);
+      // })
     }
   }
 }

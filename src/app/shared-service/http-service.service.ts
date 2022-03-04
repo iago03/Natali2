@@ -8,6 +8,10 @@ export class HttpServiceService {
 
   constructor(private angularFirestore:AngularFirestore) { }
 
+  putAllItemLengthInSessionStorage(){
+    return this.angularFirestore.collection('iago').valueChanges()
+  }
+
   
   getItemsFromFirebase(){
     return this.angularFirestore.collection('iago', ref => ref 
